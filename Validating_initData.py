@@ -8,7 +8,7 @@ def HMAC_SHA256(msg: (str,bytes,bytearray) = None,
     :param msg: хешируемый текст, поддерживаемые типы (str,bytes,bytearray).
     :param key: секретный ключ, поддерживаемые типы (str,bytes,bytearray).
     :param ret: тип возвращаемого значения, возможные варианты ('byte','hex') или возвращается объект hmac.
-    :return: строка содержащая результат MAC-SHA-256 в hex виде.
+    :return: строка содержащая результат MAC-SHA-256.
     '''
     # DOC - https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app
     import hmac, hashlib
